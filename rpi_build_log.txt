@@ -1,0 +1,740 @@
+make[1]: Entering directory '/home/pi/rpi_kernel_src/out'
+  GEN     ./Makefile
+scripts/kconfig/conf  --syncconfig Kconfig
+  GEN     ./Makefile
+  Using /home/pi/rpi_kernel_src/linux as source for kernel
+  CC      scripts/mod/empty.o
+  CC      scripts/mod/devicetable-offsets.s
+  MKELF   scripts/mod/elfconfig.h
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/mod/sumversion.o
+  CC      kernel/bounds.s
+  HOSTCC  scripts/mod/file2alias.o
+  CC      arch/arm/kernel/asm-offsets.s
+  HOSTLD  scripts/mod/modpost
+  CALL    /home/pi/rpi_kernel_src/linux/scripts/checksyscalls.sh
+  CC      arch/arm/vfp/vfpmodule.o
+  CC      arch/arm/vdso/vgettimeofday.o
+  VDSO    arch/arm/vdso/vdso.so.raw
+  MUNGE   arch/arm/vdso/vdso.so.dbg
+  OBJCOPY arch/arm/vdso/vdso.so
+  AS      arch/arm/vdso/vdso.o
+  AR      arch/arm/vdso/built-in.a
+  CC      init/main.o
+  CC      arch/arm/vfp/vfpsingle.o
+  CC      arch/arm/mm/extable.o
+  CC      arch/arm/kernel/elf.o
+  CC      arch/arm/mm/fault.o
+  CC      arch/arm/kernel/irq.o
+  CC      arch/arm/vfp/vfpdouble.o
+  CC      arch/arm/mm/init.o
+  CC      arch/arm/kernel/opcodes.o
+  AR      arch/arm/vfp/built-in.a
+  CC      arch/arm/common/firmware.o
+  CC      arch/arm/kernel/process.o
+  AR      arch/arm/common/built-in.a
+  CHK     include/generated/compile.h
+  CC      arch/arm/mm/iomap.o
+  CC      arch/arm/probes/decode.o
+  CC      init/do_mounts.o
+  CC      arch/arm/kernel/ptrace.o
+  CC      arch/arm/probes/kprobes/core.o
+  CC      arch/arm/mm/dma-mapping.o
+  CC      arch/arm/probes/kprobes/actions-common.o
+  CC      arch/arm/kernel/reboot.o
+  CC      arch/arm/probes/kprobes/checkers-common.o
+  CC      arch/arm/mm/fault-armv.o
+  CC      arch/arm/probes/kprobes/actions-arm.o
+  CC      arch/arm/kernel/return_address.o
+  CC      arch/arm/mm/flush.o
+  CC      arch/arm/probes/kprobes/checkers-arm.o
+  CC      arch/arm/kernel/setup.o
+  CC      arch/arm/probes/kprobes/opt-arm.o
+  CC      arch/arm/mm/idmap.o
+  CC      arch/arm/mm/ioremap.o
+  CC      init/do_mounts_rd.o
+  AR      arch/arm/probes/kprobes/built-in.a
+  CC      arch/arm/probes/decode-arm.o
+  AR      arch/arm/probes/built-in.a
+  CC      arch/arm/kernel/signal.o
+  CC      arch/arm/mm/mmap.o
+  CC      init/do_mounts_initrd.o
+  CC [M]  arch/arm/crypto/aes-cipher-glue.o
+  CC      arch/arm/mm/pgd.o
+  CC      init/initramfs.o
+  CC [M]  arch/arm/crypto/aes-neonbs-glue.o
+  CC      arch/arm/kernel/stacktrace.o
+  CC      arch/arm/mm/mmu.o
+  CC      arch/arm/kernel/sys_arm.o
+  CC      init/calibrate.o
+  CC [M]  arch/arm/crypto/sha1_glue.o
+  CC      arch/arm/kernel/time.o
+  CC      init/init_task.o
+  CC      arch/arm/mm/pageattr.o
+  CC      arch/arm/kernel/traps.o
+  CC [M]  arch/arm/crypto/sha1_neon_glue.o
+  CC      arch/arm/mm/proc-syms.o
+  CC      init/version.o
+  AR      init/built-in.a
+  CC      arch/arm/mm/alignment.o
+  LD [M]  arch/arm/crypto/aes-arm.o
+  LD [M]  arch/arm/crypto/aes-arm-bs.o
+  LD [M]  arch/arm/crypto/sha1-arm.o
+  CC      arch/arm/kernel/bugs.o
+  LD [M]  arch/arm/crypto/sha1-arm-neon.o
+  CC      arch/arm/kernel/fiq.o
+  CC      arch/arm/mach-bcm/board_bcm2835.o
+  CC      arch/arm/mm/copypage-v6.o
+  CC      arch/arm/mach-bcm/platsmp.o
+  CC      arch/arm/kernel/armksyms.o
+  CC      arch/arm/mm/context.o
+  AR      arch/arm/mach-bcm/built-in.a
+  CC      arch/arm/kernel/module.o
+  CC      kernel/fork.o
+  CC      arch/arm/mm/proc-v7-bugs.o
+  CC      kernel/exec_domain.o
+  AR      arch/arm/mm/built-in.a
+  CC      arch/arm/kernel/module-plts.o
+  CC      arch/arm/kernel/smp.o
+  CC      arch/arm/kernel/smp_tlb.o
+  CC      certs/system_keyring.o
+  CC      kernel/panic.o
+  AR      certs/built-in.a
+  CC      kernel/cpu.o
+  CC      arch/arm/kernel/arch_timer.o
+  CC      arch/arm/kernel/ftrace.o
+  CC      arch/arm/kernel/insn.o
+  CC      arch/arm/kernel/jump_label.o
+  CC      arch/arm/kernel/patch.o
+  CC      mm/filemap.o
+  CC      arch/arm/kernel/kgdb.o
+  CC      kernel/exit.o
+  CC      fs/open.o
+  CC      arch/arm/kernel/unwind.o
+  CC      arch/arm/kernel/devtree.o
+  CC      arch/arm/kernel/swp_emulate.o
+  CC      fs/read_write.o
+  CC      arch/arm/kernel/hw_breakpoint.o
+  CC      kernel/softirq.o
+  CC      mm/mempool.o
+  CC      arch/arm/kernel/perf_regs.o
+  CC      arch/arm/kernel/perf_callchain.o
+  CC      kernel/resource.o
+  CC      mm/oom_kill.o
+  CC      arch/arm/kernel/perf_event_xscale.o
+  CC      arch/arm/kernel/perf_event_v6.o
+  CC      fs/file_table.o
+  CC      arch/arm/kernel/perf_event_v7.o
+  CC      kernel/sysctl.o
+  CC      arch/arm/kernel/topology.o
+  CC      fs/super.o
+  CC      arch/arm/kernel/vdso.o
+  CC      mm/fadvise.o
+  CC      arch/arm/kernel/io.o
+  AR      arch/arm/kernel/built-in.a
+  CC      mm/maccess.o
+  CC      fs/char_dev.o
+  CC      ipc/util.o
+  CC      mm/page_alloc.o
+  CC      kernel/sysctl_binary.o
+  CC      fs/stat.o
+  CC      ipc/msgutil.o
+  CC      kernel/capability.o
+  CC      ipc/msg.o
+  CC      kernel/ptrace.o
+  CC      fs/exec.o
+  CC      ipc/sem.o
+  CC      kernel/user.o
+  CC      kernel/signal.o
+  CC      mm/page-writeback.o
+  CC      ipc/shm.o
+  CC      fs/pipe.o
+  CC      ipc/syscall.o
+  CC      fs/namei.o
+  CC      ipc/ipc_sysctl.o
+  CC      ipc/mqueue.o
+  CC      kernel/sys.o
+  CC      mm/readahead.o
+  CC      ipc/namespace.o
+  CC      ipc/mq_sysctl.o
+  CC      mm/swap.o
+  AR      ipc/built-in.a
+  CC      mm/truncate.o
+  CC      kernel/umh.o
+  CC      fs/fcntl.o
+  CC      security/keys/gc.o
+  CC      mm/vmscan.o
+  CC      security/keys/key.o
+  CC      kernel/workqueue.o
+  CC      fs/ioctl.o
+  CC      security/keys/keyring.o
+  CC      fs/readdir.o
+  CC      security/keys/keyctl.o
+  CC      fs/select.o
+  CC      kernel/pid.o
+  CC      security/keys/permission.o
+  CC      mm/shmem.o
+  CC      security/keys/process_keys.o
+  CC      kernel/task_work.o
+  CC      fs/dcache.o
+  CC      security/keys/request_key.o
+  CC      kernel/extable.o
+  CC      security/keys/request_key_auth.o
+  CC      kernel/params.o
+  CC      security/keys/user_defined.o
+  CC      fs/inode.o
+  CC      mm/util.o
+  CC      kernel/kthread.o
+  CC      security/keys/proc.o
+  CC      security/keys/sysctl.o
+  AR      security/keys/built-in.a
+  CC      security/commoncap.o
+  CC      mm/mmzone.o
+  CC      kernel/sys_ni.o
+  CC      kernel/nsproxy.o
+  CC      mm/vmstat.o
+  CC      kernel/notifier.o
+  CC      fs/attr.o
+  CC      security/min_addr.o
+  CC      security/device_cgroup.o
+  CC      fs/bad_inode.o
+  CC      kernel/ksysfs.o
+  CC      mm/backing-dev.o
+  AR      security/built-in.a
+  CC      fs/file.o
+  CC      fs/filesystems.o
+  CC      kernel/cred.o
+  CC      kernel/reboot.o
+  CC      fs/namespace.o
+  CC      mm/mm_init.o
+  CC      kernel/async.o
+  CC      mm/mmu_context.o
+  CC      crypto/api.o
+  CC      kernel/range.o
+  CC      kernel/smpboot.o
+  CC      mm/percpu.o
+  CC      crypto/cipher.o
+  CC      kernel/ucount.o
+  CC      crypto/compress.o
+  CC      fs/seq_file.o
+  CC      kernel/kmod.o
+  CC      crypto/memneq.o
+  CC      kernel/groups.o
+  CC      fs/xattr.o
+  CC      crypto/crypto_wq.o
+  CC      mm/slab_common.o
+  CC      crypto/algapi.o
+  CC      fs/libfs.o
+  CC      kernel/bpf/core.o
+  CC      mm/compaction.o
+  CC      crypto/scatterwalk.o
+  CC      fs/fs-writeback.o
+  CC      crypto/proc.o
+  CC      crypto/aead.o
+  CC      kernel/bpf/syscall.o
+  CC      mm/vmacache.o
+  CC      mm/interval_tree.o
+  CC      crypto/ablkcipher.o
+  CC      mm/list_lru.o
+  CC      fs/pnode.o
+  CC      kernel/bpf/verifier.o
+  CC      crypto/blkcipher.o
+  CC      mm/workingset.o
+  CC      fs/splice.o
+  CC      mm/debug.o
+  CC      crypto/skcipher.o
+  CC      mm/gup.o
+  CC      fs/sync.o
+  CC      crypto/seqiv.o
+  CC      fs/utimes.o
+  CC      mm/highmem.o
+  CC      crypto/ahash.o
+  CC      fs/d_path.o
+  CC      mm/memory.o
+  CC      crypto/shash.o
+  CC      fs/stack.o
+  CC      kernel/bpf/inode.o
+  CC      fs/fs_struct.o
+  CC      fs/statfs.o
+  CC      crypto/akcipher.o
+  CC      kernel/bpf/helpers.o
+  CC      mm/mincore.o
+  CC      crypto/kpp.o
+  CC      fs/fs_pin.o
+  CC      kernel/bpf/tnum.o
+  CC      mm/mlock.o
+  CC      kernel/bpf/hashtab.o
+  CC      fs/nsfs.o
+  CC      crypto/rsapubkey.asn1.o
+  CC      crypto/rsaprivkey.asn1.o
+  CC      fs/buffer.o
+  CC      crypto/rsa.o
+  CC      crypto/rsa_helper.o
+  CC      mm/mmap.o
+  CC      crypto/rsa-pkcs1pad.o
+  CC      kernel/bpf/arraymap.o
+  CC      crypto/acompress.o
+  CC      kernel/bpf/percpu_freelist.o
+  CC      kernel/bpf/bpf_lru_list.o
+  CC      crypto/scompress.o
+  CC      kernel/bpf/lpm_trie.o
+  CC      fs/block_dev.o
+  CC      mm/mprotect.o
+  CC      crypto/algboss.o
+  CC      kernel/bpf/map_in_map.o
+  CC      mm/mremap.o
+  CC      kernel/bpf/local_storage.o
+  CC      crypto/testmgr.o
+  CC      mm/msync.o
+  CC      kernel/bpf/disasm.o
+  CC      fs/direct-io.o
+  CC      kernel/bpf/btf.o
+  CC      mm/page_vma_mapped.o
+  CC      crypto/hmac.o
+  CC      mm/pagewalk.o
+  CC      crypto/crypto_null.o
+  CC      mm/pgtable-generic.o
+  CC      kernel/bpf/devmap.o
+  CC      crypto/sha256_generic.o
+  CC      mm/rmap.o
+  CC      kernel/bpf/cpumap.o
+  CC      fs/mpage.o
+  CC      crypto/ecb.o
+  CC      mm/vmalloc.o
+  CC      crypto/cbc.o
+  CC      kernel/bpf/offload.o
+  CC      fs/proc_namespace.o
+  CC      crypto/cts.o
+  CC [M]  fs/9p/vfs_super.o
+  CC      crypto/xts.o
+  CC      kernel/bpf/stackmap.o
+  CC      mm/process_vm_access.o
+  CC [M]  fs/9p/vfs_inode.o
+  CC      crypto/ctr.o
+  CC      mm/init-mm.o
+  CC      mm/nobootmem.o
+  CC      crypto/des_generic.o
+  CC      kernel/bpf/cgroup.o
+  CC [M]  fs/9p/vfs_inode_dotl.o
+  CC      mm/madvise.o
+  CC [M]  fs/9p/vfs_addr.o
+  CC      crypto/aes_generic.o
+  CC      mm/memblock.o
+  CC [M]  fs/9p/vfs_file.o
+  CC      kernel/bpf/reuseport_array.o
+  CC      crypto/crc32c_generic.o
+  CC [M]  fs/9p/vfs_dir.o
+  AR      kernel/bpf/built-in.a
+  CC      kernel/cgroup/cgroup.o
+  CC      mm/page_io.o
+  CC      crypto/crc32_generic.o
+  CC [M]  fs/9p/vfs_dentry.o
+  CC      crypto/rng.o
+  CC      mm/swap_state.o
+  CC [M]  fs/9p/v9fs.o
+  CC      mm/swapfile.o
+  CC      crypto/drbg.o
+  CC [M]  fs/9p/fid.o
+  CC [M]  fs/9p/xattr.o
+  CC      crypto/jitterentropy.o
+  CC      crypto/jitterentropy-kcapi.o
+  CC [M]  fs/9p/acl.o
+  CC      crypto/asymmetric_keys/asymmetric_type.o
+  LD [M]  fs/9p/9p.o
+  CC      fs/autofs/init.o
+  CC      fs/autofs/inode.o
+  CC      crypto/asymmetric_keys/restrict.o
+  CC      fs/autofs/root.o
+  CC      crypto/asymmetric_keys/signature.o
+  CC      kernel/cgroup/rstat.o
+  CC      mm/swap_slots.o
+  CC      crypto/asymmetric_keys/public_key.o
+  CC      mm/frontswap.o
+  CC      fs/autofs/symlink.o
+  CC      kernel/cgroup/namespace.o
+  CC      fs/autofs/waitq.o
+  CC      crypto/asymmetric_keys/x509.asn1.o
+  CC      crypto/asymmetric_keys/x509_akid.asn1.o
+  CC      crypto/asymmetric_keys/x509_cert_parser.o
+  CC      kernel/cgroup/cgroup-v1.o
+  CC      fs/autofs/expire.o
+  CC      mm/dmapool.o
+  CC      crypto/asymmetric_keys/x509_public_key.o
+  CC      fs/autofs/dev-ioctl.o
+  CC      crypto/asymmetric_keys/pkcs7.asn1.o
+  CC      mm/slub.o
+  CC      crypto/asymmetric_keys/pkcs7_parser.o
+  AR      fs/autofs/built-in.a
+  CC      kernel/cgroup/freezer.o
+  CC      crypto/asymmetric_keys/pkcs7_trust.o
+  CC [M]  fs/btrfs/super.o
+  CC      kernel/cgroup/pids.o
+  CC      crypto/asymmetric_keys/pkcs7_verify.o
+  CC      kernel/cgroup/cpuset.o
+  AR      crypto/asymmetric_keys/built-in.a
+  CC [M]  crypto/async_tx/async_tx.o
+  CC [M]  crypto/async_tx/async_memcpy.o
+  CC [M]  crypto/async_tx/async_xor.o
+  AR      kernel/cgroup/built-in.a
+  CC      kernel/debug/debug_core.o
+  CC      mm/migrate.o
+  CC [M]  crypto/async_tx/async_pq.o
+  CC      kernel/debug/gdbstub.o
+  CC [M]  crypto/async_tx/async_raid6_recov.o
+  CC      mm/page_counter.o
+  CC [M]  fs/btrfs/ctree.o
+  CC      kernel/debug/kdb/kdb_io.o
+  CC      mm/memcontrol.o
+  CC      crypto/hash_info.o
+  CC [M]  crypto/echainiv.o
+  CC      kernel/debug/kdb/kdb_main.o
+  CC [M]  crypto/crypto_user.o
+  CC [M]  crypto/cmac.o
+  CC [M]  crypto/xcbc.o
+  CC      kernel/debug/kdb/kdb_support.o
+  CC [M]  crypto/md4.o
+  CC [M]  crypto/md5.o
+  CC [M]  fs/btrfs/extent-tree.o
+  CC      kernel/debug/kdb/kdb_bt.o
+  CC      mm/vmpressure.o
+  CC      kernel/debug/kdb/gen-kdb_cmds.o
+  CC      kernel/debug/kdb/kdb_bp.o
+  CC [M]  crypto/sha1_generic.o
+  CC      mm/cleancache.o
+  CC      kernel/debug/kdb/kdb_debugger.o
+  CC [M]  crypto/sha512_generic.o
+  CC      mm/page_isolation.o
+  CC      kernel/debug/kdb/kdb_keyboard.o
+  CC      mm/early_ioremap.o
+  AR      kernel/debug/kdb/built-in.a
+  AR      kernel/debug/built-in.a
+  CC [M]  crypto/wp512.o
+  CC      kernel/dma/mapping.o
+  CC      mm/cma.o
+  CC      kernel/dma/contiguous.o
+  CC [M]  crypto/tgr192.o
+  CC      mm/frame_vector.o
+  CC      kernel/dma/coherent.o
+  CC [M]  crypto/gf128mul.o
+  CC      mm/memfd.o
+  AR      kernel/dma/built-in.a
+  CC [M]  crypto/gcm.o
+  CC      kernel/events/core.o
+  CC [M]  mm/zsmalloc.o
+  CC [M]  crypto/ccm.o
+  AR      mm/built-in.a
+  CC      kernel/irq/irqdesc.o
+  CC [M]  crypto/cryptd.o
+  CC [M]  fs/btrfs/print-tree.o
+  CC      kernel/irq/handle.o
+  CC [M]  fs/btrfs/root-tree.o
+  CC [M]  crypto/cast_common.o
+  CC      kernel/irq/manage.o
+  CC [M]  crypto/cast5_generic.o
+  CC [M]  fs/btrfs/dir-item.o
+  CC [M]  crypto/arc4.o
+  CC      kernel/irq/spurious.o
+  CC [M]  crypto/deflate.o
+  CC [M]  fs/btrfs/file-item.o
+  CC      kernel/irq/resend.o
+  CC [M]  crypto/michael_mic.o
+  CC      kernel/irq/chip.o
+  CC [M]  crypto/authenc.o
+  CC      kernel/events/ring_buffer.o
+  CC [M]  fs/btrfs/inode-item.o
+  CC      kernel/irq/dummychip.o
+  CC [M]  fs/btrfs/inode-map.o
+  CC [M]  crypto/authencesn.o
+  CC      kernel/events/callchain.o
+  CC      kernel/irq/devres.o
+  CC      kernel/events/hw_breakpoint.o
+  CC [M]  crypto/lzo.o
+  CC [M]  fs/btrfs/disk-io.o
+  CC      kernel/irq/autoprobe.o
+  CC [M]  crypto/lz4.o
+  AR      kernel/events/built-in.a
+  CC [M]  crypto/ghash-generic.o
+  CC [M]  fs/btrfs/transaction.o
+  CC      kernel/irq/irqdomain.o
+  CC [M]  crypto/af_alg.o
+  CC      kernel/irq/irq_sim.o
+  CC [M]  fs/btrfs/inode.o
+  CC      kernel/irq/proc.o
+  CC [M]  crypto/algif_skcipher.o
+  CC      block/bio.o
+  CC      kernel/irq/affinity.o
+  CC      kernel/irq/debugfs.o
+  CC [M]  crypto/ecc.o
+  AR      kernel/irq/built-in.a
+  CC      kernel/locking/mutex.o
+  CC      kernel/locking/semaphore.o
+  CC      block/elevator.o
+  CC [M]  crypto/ecdh.o
+  CC      kernel/locking/rwsem.o
+  CC [M]  crypto/ecdh_helper.o
+  CC      kernel/locking/percpu-rwsem.o
+  CC [M]  crypto/xor.o
+  CC      kernel/locking/spinlock.o
+  CC      block/blk-core.o
+  CC [M]  crypto/simd.o
+  CC      kernel/locking/osq_lock.o
+  CC      kernel/locking/rtmutex.o
+  AR      crypto/built-in.a
+  LD [M]  crypto/ecdh_generic.o
+  LD [M]  crypto/crypto_simd.o
+  CC      kernel/power/qos.o
+  CC      kernel/locking/rwsem-xadd.o
+  AR      kernel/locking/built-in.a
+  CC      block/blk-tag.o
+  CC      kernel/power/main.o
+  CC [M]  fs/btrfs/file.o
+  CC      drivers/amba/bus.o
+  CC      kernel/power/process.o
+  CC      kernel/power/poweroff.o
+  CC      block/blk-sysfs.o
+  AR      drivers/amba/built-in.a
+  CC [M]  drivers/auxdisplay/charlcd.o
+  AR      kernel/power/built-in.a
+  CC      kernel/printk/printk.o
+  CC [M]  drivers/auxdisplay/hd44780.o
+  CC      block/blk-flush.o
+  CC [M]  fs/btrfs/tree-defrag.o
+  CC      drivers/base/component.o
+  CC [M]  fs/btrfs/extent_map.o
+  CC      block/blk-settings.o
+  CC      drivers/base/core.o
+  CC      kernel/printk/printk_safe.o
+  AR      kernel/printk/built-in.a
+  CC [M]  fs/btrfs/sysfs.o
+  CC      kernel/rcu/update.o
+  CC      block/blk-ioc.o
+  CC      kernel/rcu/sync.o
+  CC      block/blk-map.o
+  CC [M]  fs/btrfs/struct-funcs.o
+  CC      kernel/rcu/srcutree.o
+  CC      drivers/base/bus.o
+  CC      block/blk-exec.o
+  CC [M]  fs/btrfs/xattr.o
+  CC      kernel/rcu/tree.o
+  CC      drivers/base/dd.o
+  CC      block/blk-merge.o
+  CC [M]  fs/btrfs/ordered-data.o
+  CC      drivers/base/syscore.o
+  CC [M]  fs/btrfs/extent_io.o
+  CC      drivers/base/driver.o
+  CC      block/blk-softirq.o
+  CC      drivers/base/class.o
+  CC      kernel/rcu/rcu_segcblist.o
+  CC      block/blk-timeout.o
+  AR      kernel/rcu/built-in.a
+  CC      drivers/base/platform.o
+  CC      kernel/sched/core.o
+  CC      block/blk-lib.o
+  CC      drivers/base/cpu.o
+  CC      block/blk-mq.o
+  CC      drivers/base/firmware.o
+  CC      drivers/base/init.o
+  CC [M]  fs/btrfs/volumes.o
+  CC      drivers/base/map.o
+  CC      drivers/base/devres.o
+  CC      drivers/base/attribute_container.o
+  CC      block/blk-mq-tag.o
+  CC      drivers/base/transport_class.o
+  CC      drivers/base/topology.o
+  CC      kernel/sched/loadavg.o
+  CC      drivers/base/container.o
+  CC      block/blk-stat.o
+  CC      drivers/base/property.o
+  CC      kernel/sched/clock.o
+  CC      block/blk-mq-sysfs.o
+  CC      drivers/base/cacheinfo.o
+  CC      block/blk-mq-cpumap.o
+  CC      kernel/sched/cputime.o
+  CC      drivers/base/devcon.o
+  CC [M]  fs/btrfs/async-thread.o
+  CC      block/blk-mq-sched.o
+  CC      drivers/base/devtmpfs.o
+  CC      kernel/sched/idle.o
+  CC      drivers/base/firmware_loader/fallback_table.o
+  CC [M]  fs/btrfs/ioctl.o
+  CC      block/ioctl.o
+  CC      drivers/base/firmware_loader/main.o
+  AR      drivers/base/firmware_loader/built-in.a
+  CC      kernel/sched/fair.o
+  CC      drivers/base/power/sysfs.o
+  CC      block/genhd.o
+  CC      drivers/base/power/generic_ops.o
+  CC      drivers/base/power/common.o
+  CC      drivers/base/power/qos.o
+  CC      block/partition-generic.o
+  CC [M]  fs/btrfs/locking.o
+  CC      drivers/base/power/runtime.o
+  CC      block/ioprio.o
+  CC [M]  fs/btrfs/orphan.o
+  CC      block/badblocks.o
+  CC      drivers/base/power/wakeirq.o
+  CC [M]  fs/btrfs/export.o
+  CC      kernel/sched/rt.o
+  CC      drivers/base/power/domain.o
+  CC      block/partitions/check.o
+  CC [M]  fs/btrfs/tree-log.o
+  CC      block/partitions/mac.o
+  CC      kernel/sched/deadline.o
+  CC      block/partitions/msdos.o
+  CC      drivers/base/power/domain_governor.o
+  CC      block/partitions/efi.o
+  CC      drivers/base/power/clock_ops.o
+  AR      drivers/base/power/built-in.a
+  CC      drivers/base/regmap/regmap.o
+  AR      block/partitions/built-in.a
+  CC      block/blk-rq-qos.o
+  CC      block/scsi_ioctl.o
+  CC      kernel/sched/wait.o
+  CC [M]  fs/btrfs/free-space-cache.o
+  CC      block/bsg.o
+  CC      kernel/sched/wait_bit.o
+  CC      drivers/base/regmap/regcache.o
+  CC      block/bsg-lib.o
+  CC      kernel/sched/swait.o
+  CC      drivers/base/regmap/regcache-rbtree.o
+  CC      block/blk-cgroup.o
+  CC [M]  fs/btrfs/zlib.o
+  CC      drivers/base/regmap/regcache-flat.o
+  CC [M]  fs/btrfs/lzo.o
+  CC      drivers/base/regmap/regmap-debugfs.o
+  CC [M]  fs/btrfs/zstd.o
+  CC      kernel/sched/completion.o
+  CC      drivers/base/regmap/regmap-i2c.o
+  CC [M]  fs/btrfs/compression.o
+  CC      block/blk-throttle.o
+  CC      drivers/base/regmap/regmap-spi.o
+  CC      kernel/sched/cpupri.o
+  CC      drivers/base/regmap/regmap-mmio.o
+  CC [M]  fs/btrfs/delayed-ref.o
+  CC      kernel/sched/cpudeadline.o
+  CC      drivers/base/regmap/regmap-irq.o
+  CC      block/noop-iosched.o
+  CC      block/deadline-iosched.o
+  CC      kernel/sched/topology.o
+  CC [M]  fs/btrfs/relocation.o
+  AR      drivers/base/regmap/built-in.a
+  CC      drivers/base/module.o
+  CC      block/cfq-iosched.o
+  CC      drivers/base/pinctrl.o
+  CC      drivers/base/devcoredump.o
+  CC      kernel/sched/stop_task.o
+  CC      drivers/base/arch_topology.o
+  AR      drivers/base/built-in.a
+  CC [M]  drivers/bcma/main.o
+  CC      kernel/sched/pelt.o
+  CC [M]  drivers/bcma/scan.o
+  CC [M]  fs/btrfs/delayed-inode.o
+  CC      block/mq-deadline.o
+  CC      kernel/sched/autogroup.o
+  CC [M]  drivers/bcma/core.o
+  CC      block/kyber-iosched.o
+  CC [M]  drivers/bcma/sprom.o
+  CC [M]  fs/btrfs/scrub.o
+  CC      kernel/sched/stats.o
+  CC      block/blk-mq-debugfs.o
+  CC [M]  drivers/bcma/driver_chipcommon.o
+  CC      kernel/sched/debug.o
+  AR      block/built-in.a
+  CC [M]  fs/btrfs/reada.o
+  CC [M]  drivers/bcma/driver_chipcommon_pmu.o
+  CC [M]  drivers/bcma/driver_chipcommon_b.o
+  CC      kernel/time/time.o
+  CC      kernel/sched/cpuacct.o
+  CC [M]  fs/btrfs/backref.o
+  LD [M]  drivers/bcma/bcma.o
+  CC      drivers/block/brd.o
+  CC      kernel/time/timer.o
+  CC      kernel/sched/cpufreq.o
+  CC      drivers/block/loop.o
+  CC [M]  fs/btrfs/ulist.o
+  CC      kernel/sched/cpufreq_schedutil.o
+  CC [M]  fs/btrfs/qgroup.o
+  CC      kernel/time/hrtimer.o
+  CC [M]  drivers/block/pktcdvd.o
+  CC      kernel/sched/membarrier.o
+  CC      kernel/sched/isolation.o
+  CC      kernel/time/timekeeping.o
+  CC [M]  drivers/block/nbd.o
+  CC [M]  fs/btrfs/send.o
+  AR      kernel/sched/built-in.a
+  CC [M]  drivers/block/cryptoloop.o
+  CC [M]  drivers/block/aoe/aoeblk.o
+  CC      kernel/time/ntp.o
+  CC [M]  drivers/block/drbd/drbd_bitmap.o
+  CC      kernel/time/clocksource.o
+  CC [M]  drivers/block/aoe/aoechr.o
+  CC [M]  drivers/block/aoe/aoecmd.o
+  CC      kernel/time/jiffies.o
+  CC      kernel/time/timer_list.o
+  CC [M]  drivers/block/drbd/drbd_proc.o
+  CC      kernel/time/timeconv.o
+  CC [M]  fs/btrfs/dev-replace.o
+  CC [M]  drivers/block/aoe/aoedev.o
+  CC      kernel/time/timecounter.o
+  CC      kernel/time/alarmtimer.o
+  CC [M]  drivers/block/drbd/drbd_worker.o
+  CC [M]  drivers/block/aoe/aoemain.o
+  CC [M]  fs/btrfs/raid56.o
+  CC [M]  drivers/block/aoe/aoenet.o
+  CC      kernel/time/posix-timers.o
+  LD [M]  drivers/block/aoe/aoe.o
+  CC      kernel/trace/trace_clock.o
+  CC      kernel/time/posix-cpu-timers.o
+  CC      kernel/trace/ftrace.o
+  CC [M]  fs/btrfs/uuid-tree.o
+  CC [M]  drivers/block/drbd/drbd_receiver.o
+  CC      kernel/time/posix-clock.o
+  CC [M]  fs/btrfs/props.o
+  CC      kernel/time/itimer.o
+  CC [M]  fs/btrfs/free-space-tree.o
+  CC      kernel/time/clockevents.o
+  CC      kernel/time/tick-common.o
+  CC [M]  fs/btrfs/tree-checker.o
+  CC      kernel/trace/ring_buffer.o
+  CC      kernel/time/tick-broadcast.o
+  CC [M]  fs/btrfs/acl.o
+  CC      kernel/time/tick-broadcast-hrtimer.o
+  CC      kernel/time/sched_clock.o
+  CC [M]  drivers/block/drbd/drbd_req.o
+  LD [M]  fs/btrfs/btrfs.o
+  CC      kernel/time/tick-oneshot.o
+  CC      fs/cachefiles/bind.o
+  CC      kernel/time/tick-sched.o
+  CC      kernel/trace/trace.o
+  CC      fs/cachefiles/daemon.o
+  CC      fs/cachefiles/interface.o
+  CC      kernel/time/timekeeping_debug.o
+  CC      fs/cachefiles/key.o
+  CC [M]  drivers/block/drbd/drbd_actlog.o
+  AR      kernel/time/built-in.a
+  CC [M]  fs/cifs/trace.o
+  CC      fs/cachefiles/main.o
+  CC [M]  fs/cifs/cifsfs.o
+  CC      fs/cachefiles/namei.o
+  CC [M]  drivers/block/drbd/drbd_main.o
+  CC      fs/cachefiles/rdwr.o
+  CC [M]  fs/cifs/cifssmb.o
+  CC      kernel/trace/trace_output.o
+  CC      fs/cachefiles/security.o
+  CC      fs/cachefiles/xattr.o
+  CC      kernel/trace/trace_seq.o
+  AR      fs/cachefiles/built-in.a
+  CC [M]  drivers/bluetooth/hci_vhci.o
+  CC      kernel/trace/trace_stat.o
+  CC [M]  drivers/bluetooth/hci_ldisc.o
+  CC      kernel/trace/trace_printk.o
+  CC [M]  drivers/block/drbd/drbd_strings.o
+  CC [M]  drivers/block/drbd/drbd_nl.o
+  CC [M]  fs/cifs/cifs_debug.o
+  CC      kernel/trace/trace_sched_switch.o
+  CC      kernel/trace/trace_functions.o
+  CC [M]  drivers/bluetooth/hci_serdev.o
+  CC [M]  fs/cifs/connect.o
+  CC      kernel/trace/trace_preemptirq.o
+  CC [M]  drivers/bluetooth/hci_h4.o
+  CC      kernel/trace/trace_irqsoff.o
