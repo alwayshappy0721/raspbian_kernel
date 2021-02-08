@@ -1,5 +1,5 @@
 #!/bin/bash
-
+## bulild!
 echo "configure build output path"
 
 KERNEL_TOP_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
